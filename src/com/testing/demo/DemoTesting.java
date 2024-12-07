@@ -12,11 +12,12 @@ public class DemoTesting {
 
 		GenericMethod<Double> demoD = new GenericMethod<Double>(10.00);
 		System.out.println(demoD.getValue());
-
 		// multiple type method
 
 		GenericMethodWithMultipleType<Double, String> multi = new GenericMethodWithMultipleType<Double, String>(8.0,
 				"multip ", 99, "testing");
+
+		// try to implement payment gateway for use
 
 		System.out.println(multi.toString());
 
