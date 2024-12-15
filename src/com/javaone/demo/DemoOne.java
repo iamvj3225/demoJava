@@ -111,7 +111,7 @@ public class DemoOne {
 		// Question 8 : itreate arrayList using while lopp for loop and advance for loop
 
 		// Question 9 : find duplicate char in string
-
+		findDuplicatesInString("Rama");
 		// Question 10 : find second highest number in list
 
 		// Question 11 : armsstring
@@ -159,6 +159,18 @@ public class DemoOne {
 		// Question 25 :Given an array nums of n integers where nums[i] is in the range
 		// [1, n], return an array of all the integers in the range [1, n] that do not
 		// appear in nums.
+	}
+
+	private static void findDuplicatesInString(String givenString) {
+		Map<Character, Integer> charCount = new HashMap<>();
+
+		for (char c : givenString.toCharArray()) {
+			charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+		}
+
+		for (Map.Entry<Character, Integer> entry : charCount.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
 	}
 
 	private static int getFibonacciOf(int num) {

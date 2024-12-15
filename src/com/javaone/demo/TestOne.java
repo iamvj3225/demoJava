@@ -25,7 +25,7 @@ public class TestOne {
 		// check string is palindrome or not
 		System.out.println("mom is This String palindrome : " + Ispalindrome("mom"));
 		// fiboinacci
-		System.out.println("7 fibonaic is : "+givenFibonacci(7));
+		System.out.println("7 fibonaic is : " + givenFibonacci(7));
 		// iterate array list using all three loop
 
 	}
@@ -34,7 +34,7 @@ public class TestOne {
 		// check for one
 		if (num <= 1)
 			return num;
-		return givenFibonacci(num-1) + givenFibonacci(num-2);
+		return givenFibonacci(num - 1) + givenFibonacci(num - 2);
 	}
 
 	private static boolean Ispalindrome(String givenString) {
