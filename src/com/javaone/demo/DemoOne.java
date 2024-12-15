@@ -7,19 +7,19 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 /*
-		// Question 1 : Reverse String
+	done	// Question 1 : Reverse String 
   
-		// Question 2 : swap method		
+	done	// Question 2 : swap method		
 
-		// Question 3 : inside string count		
+	done	// Question 3 : inside string count		
 
-		// Question 4 : iterate HashMap using while loop and advance for loop
+	done	// Question 4 : iterate HashMap using while loop and advance for loop
 		
-		// Question 5 : check is prime or not	
+	done	// Question 5 : check is prime or not	
 
-		// Question 6: String or number is palindrome
+	done	// Question 6: String or number is palindrome
 
-		// Question 7 : Fibonacci
+	done	// Question 7 : Fibonacci
 
 		// Question 8 : itreate arrayList using while lopp for loop and advance for loop
 
@@ -79,12 +79,15 @@ public class DemoOne {
 
 		// Question 1 : Reverse String
 		String reversString = reversString("vijay");
-		System.out.println(reversString);
+		System.out.println("revers String : " + reversString);
 
 		// Question 2 : swap method
+		System.out.println("swap Number befor i = 10 and j = 20 ");
 		swap(10, 20);
 
 		// Question 3 : inside string count
+		System.out.println("String is here for count word ");
+		System.out.println("i am i ");
 		Map<String, Integer> getcount = getCount("i am i ");
 		for (Map.Entry<String, Integer> entry : getcount.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
@@ -92,13 +95,18 @@ public class DemoOne {
 
 		// Question 4 : iterate HashMap using while loop and advance for loop
 		Map<String, Integer> data = new HashMap<>();
+		data.put("one", 1);
+		data.put("two", 2);
+		data.put("three", 3);
 		iterateMap(data);
 		// Question 5 : check is prime or not // check all four condition
+		System.out.println("foc check given is prime number or not :" + 14);
 		System.out.println(givenNumberIsPrimeNumber(14));
 
 		// Question 6: String or number is palindrome
 		System.out.println("is Strinig is palindrome :" + Ispalindrome("dada"));
 		// Question 7 : Fibonacci
+		System.out.println("fibonaic of 5 :" + getFibonacciOf(7));
 
 		// Question 8 : itreate arrayList using while lopp for loop and advance for loop
 
@@ -151,6 +159,15 @@ public class DemoOne {
 		// Question 25 :Given an array nums of n integers where nums[i] is in the range
 		// [1, n], return an array of all the integers in the range [1, n] that do not
 		// appear in nums.
+	}
+
+	private static int getFibonacciOf(int num) {
+
+		// check for 1 and below
+		if (num <= 1)
+			return num;
+		// check for other
+		return getFibonacciOf(num - 1) + getFibonacciOf(num - 2);
 	}
 
 	private static boolean Ispalindrome(String givenString) {
